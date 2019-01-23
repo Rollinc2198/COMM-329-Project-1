@@ -1,6 +1,7 @@
 /*--Remember the cascade: Later styles override earlier ones and more specific styles override more general ones.--*/
 body {
   color: #444;
+  background-color: #d8ffff;
   font-size: 16px;
   font-family: 'Gentium Book Basic', serif;
 }
@@ -8,12 +9,12 @@ p {
   margin-bottom: .67em;
 }
 nav, footer {
+  color: #00ffff;
   background-color: #444;
 }
 footer {
   text-align: center;
   padding: 1em 0 .3em 0;
-  color: #D0D0D0;
 }
 /*-- Main Menu Styles--*/
 nav ul {
@@ -24,7 +25,7 @@ nav ul {
   margin: 0 10em;
 }
 nav a:link, nav a:visited {
-  color: #D0D0D0;
+  color: #00ffff;
   text-decoration: none;
 }
 nav a:hover, nav a:active  {
@@ -32,14 +33,12 @@ nav a:hover, nav a:active  {
   text-decoration: underline;
 }
 nav a.active {
-  color: #F0F0F0;
+  color: #d8ffff;
 }
 /*-- Hero Unit Styles--*/
 header {
   width: 510px;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  margin: 0 auto;
+  margin: 2em auto;
 }
 header img {
   width: 100%;
@@ -51,6 +50,9 @@ header h1 {
 }
 .small {
   margin-top: 1em;
+  weight: 900;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
 }
 /*-- Article Styles--*/
 article {
@@ -58,32 +60,43 @@ article {
   font-size: 18px;
   line-height: 1.3;
   margin: 0 auto;
+  color: #002727;
 }
 article figure {
   width: 39%;
   margin: 0 0 1.25em 1.25em;
+  float: right;
+  font-size: 75%;
+  font-family: serif;
 }
 article figcaption {
 }
 .pagination {
-  margin-top: 2em;
-  margin-bottom: 2em;
-  width: 96%;
+  margin: 2em auto;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+.dropcap {
+  float: left;
+  font-size: 2.5em;
+  line-height: 1.2;
+  margin-top: -10px;
 }
 a.button {
-  border: 1px solid #888;
+  border: 2px solid #888;
   padding: .4em 1em .4em 1em;
   text-decoration: none;
-  color: #888;
+  color: #444;
   border-radius: 200px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 80%;
 }
 a.button:hover, a.button:active {
-  border: 1px solid #444;
+  border: 2px solid #444;
   text-decoration: none;
-  color: #222;
+  color: #000;
 }
 /*-- changes header and article width on small screens --*/
 @media screen and (max-width: 768px) {
